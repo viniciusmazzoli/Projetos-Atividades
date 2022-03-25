@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 2</title>
+</head>
+<body>
+<script>
+    let cont = 0, soma = 0, num;
+    var aluno = {
+        nome: prompt('Digite o nome do aluno : '),
+        nota: [],
+        quesitoNotas: ['criatividade', 'originalidade', 'elegância', 'acabamento', 'conservação']
+    }
+
+    while (cont < 5) {
+        num = parseFloat(prompt(`Qual nota você daria para o aluno(a) ${aluno.nome} no quesito de ${aluno.quesitoNotas[cont]}?`));
+        aluno.nota.push(num);
+        cont++;
+    }
+    aluno.nota.sort(function(a, b){return a - b});
+    aluno.nota.pop();
+    aluno.nota.shift();
+    soma = aluno.nota[0] + aluno.nota[1] + aluno.nota[2];
+    console.log(aluno.nota);
+    console.log(`A soma das notas do aluno ${aluno.nome} foram: ${soma}`);
+</script>
+</body>
+</html>

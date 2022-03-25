@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function atividade2() {
+        let numero = prompt('Digite o seu numero:')
+
+        if (numero % 2 == 0) {
+            window.alert('o numero é par.')
+        } else {
+            window.alert('O número é impar.')
+        }
+
+    }
+    function atividade3() {
+        let preco = prompt("Digite o preco do produto:");
+        let forma = prompt("Digite a forma de pagamento 1- a vista, 2- parcelado");
+        let parcela = prompt("Digite a quantidade de parcelas que deseja (3 ou 5)");
+        mensagem = "";
+        let calculoparcela = preco / parcela;
+
+        switch (forma) {
+            case "1":
+                mensagem = "pagamento concluido";
+                break;
+            case "2":
+
+                switch (parcela) {
+                    case "3":
+                        preco = preco * 1.10;
+                        mensagem = "Preço total é:" + preco + ", parcelas de 3x de " + calculoparcela;
+                        break;
+                    case "5":
+                        preco = preco * 1.20;
+                        mensagem = "Preço total é:" + preco + ", parcelas de 5x de " + calculoparcela;
+                        break;
+                }
+        }
+
+        alert(mensagem)
+
+    }
+    function atividade4() {
+        var nome= prompt("Digite seu nome");
+        var nota1 = parseFloat(prompt("Digite sua primeira nota"));
+        var nota2 = parseFloat(prompt("Digite sua segunda nota"));
+        var nota3 = parseFloat(prompt("Digite sua terceira nota"));
+        media = (nota1 + nota2 + nota3)/ 3;
+        mensagem="";
+        if((media < 7))
+            mensagem="O aluno esta Reprovado";
+        else if((media >= 7))
+            mensagem="O aluno esta Aprovado";
+        else mensagem="não foi possivel realizar o calculo"
+
+        alert(mensagem)
+
+    }
+    function atividade5(){
+
+        let numero =prompt("Digite um número de 1 a 12");
+        mensagem ="";
+
+        if (numero === "1") {
+            mensagem = "Janeiro";
+        } else if (numero === "2") {
+            mensagem = "fevereiro";
+        } else if (numero === "3") {
+            mensagem = "março"
+        } else if (numero === "4"){
+            mensagem = "abril"
+        } else if (numero === "5"){
+            mensagem = "maio"
+        } else if (numero === "6"){
+            mensagem = "junho"
+        } else if (numero === "7"){
+            mensagem = "julho"
+        } else if (numero === "8"){
+            mensagem = "agosto"
+        } else if (numero === "9"){
+            mensagem = "setembro"
+        } else if (numero === "10"){
+            mensagem = "outubro"
+        } else if (numero === "11"){
+            mensagem = "novembro"
+        } else if (numero === "12"){
+            mensagem = "dezembro"
+        }
+
+        alert(mensagem)
+    }
+    let atividade = prompt("Digite o numero da questão que você quer executar:")
+
+    switch(atividade) {
+        case "1":
+            let ano = 2022;
+
+            let idade;
+
+            let nascimento = prompt("Digite seu nome de nascimento");
+
+            let nome = prompt("Digite seu nome:");
+
+            idade = ano - nascimento;
+
+            window.alert("Olá seu nome é " + nome + " e você tem " + idade + " anos ")
+            break;
+
+        case "2":
+            atividade2()
+        case "3":
+            atividade3()
+        case "4":
+             atividade4()
+
+        case "5":
+            atividade5()
+
+
+            break;
+    }
+
+
+
+</script>
+</body>
+</html>

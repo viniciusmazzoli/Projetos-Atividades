@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Calculo de Aprovação</title>
+</head>
+<body>
+<script>
+    var nome= prompt("Digite seu nome");
+    var nota1 = parseFloat(prompt("Digite sua primeira nota"));
+    var nota2 = parseFloat(prompt("Digite sua segunda nota"));
+    var nota3 = parseFloat(prompt("Digite sua terceira nota"));
+    media = (nota1 + nota2 + nota3)/ 3;
+    mensagem="";
+    if((media < 7))
+        mensagem="O aluno esta Reprovado";
+    else if((media >= 7))
+        mensagem="O aluno esta Aprovado";
+    else mensagem="não foi possivel realizar o calculo"
+
+    alert(mensagem)
+
+</script>
+</body>
+</html>

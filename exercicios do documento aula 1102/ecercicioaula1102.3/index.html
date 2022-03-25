@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validar Seemáforos</title>
+</head>
+<body>
+<script>
+    let status = prompt("Qual é o status do semaforo:");
+    mensagem ="";
+
+    if((status === "verde"))
+        mensagem="pode atravessar";
+    else if((status ==="amarelo"))
+        mensagem="preste atenção";
+    else if((status === "vermelho"))
+        mensagem="não pode atravessar";
+    else mensagem="não foi possivel realizar a analise";
+
+    alert(mensagem)
+</script>
+</body>
+</html>

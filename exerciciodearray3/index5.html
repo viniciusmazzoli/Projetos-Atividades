@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var arr = [];
+    var x= 1;
+    var contprompt = 5;
+    var dividir =[]
+    var num =1
+    while (x!=0) {
+            num=parseInt(prompt("Digite o numero  que seja divisivel por 3 e 5"));
+            if(num!=0){
+                if(num>0){    
+                    if(num%5==0 && num%3==0){
+                    arr.push(num)
+                    }
+                }
+            }else{
+                x=0
+            }
+
+        }
+        console.log(arr)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio 3</title>
+</head>
+<body>
+<script>
+    var salario = prompt("Digite seu salario:"),mensagem = "";
+    var percentual= 0 ,salario2 = 0, aumento=0;
+
+
+    if(salario < 1080){
+        salario2 = salario * 1.20;
+        aumento = salario2 - salario;
+        mensagem ="O seu salario de " + salario + " recebeu um reajuste de 20% para mais, que equivale a: " +
+            aumento + ", passando a ser um salario de " + salario2;
+    }
+    else if(salario >= 1080 && salario < 1700 ){
+        salario2 = salario * 1.15;
+        aumento = salario2 - salario;
+        mensagem ="O seu salario de " + salario + " recebeu um reajuste de 15% para mais, que equivale a: " +
+            aumento + ", passando a ser um salario de " + salario2;
+    }
+    else if(salario >= 1700 && salario < 2500){
+        salario2 = salario * 1.10;
+        aumento = salario2 - salario;
+        mensagem ="O seu salario de " + salario + " recebeu um reajuste de 10% para mais, que equivale a: " +
+            aumento + ", passando a ser um salario de " + salario2;
+    }
+    else{
+        salario2 = salario * 1.05;
+        aumento = salario2 - salario;
+        mensagem ="O seu salario de " + salario + " recebeu um reajuste de 5% para mais, que equivale a: " +
+            aumento + ", passando a ser um salario de " + salario2;
+
+    }
+
+
+
+alert(mensagem)
+
+
+</script>
+</body>
+</html>

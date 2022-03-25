@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let preco = prompt("Digite o preco do produto:");
+    let forma = prompt("Digite a forma de pagamento 1- a vista, 2- parcelado");
+    let parcela = prompt("Digite a quantidade de parcelas que deseja (3 ou 5)");
+    mensagem = "";
+    let calculoparcela = preco / parcela;
+
+    switch (forma) {
+        case "1":
+        mensagem = "pagamento concluido";
+
+        case "2":
+            switch (parcela) {
+                case "3":
+                    preco = preco * 1.10
+                    mensagem= "Preço total é:" + preco + ", parcelas de 3x de " + calculoparcela;
+                case "5":
+                    preco = preco * 1.20
+                    mensagem= "Preço total é:" + preco + ", parcelas de 5x de " + calculoparcela;
+
+            }
+    }
+
+    alert(mensagem)
+
+</script>
+</body>
+</html>

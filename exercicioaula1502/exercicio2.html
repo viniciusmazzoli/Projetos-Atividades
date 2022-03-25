@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Impar ou Par</title>
+</head>
+<body>
+<script>
+    var vetNum=[],x=0,vetImpar=[],vetPar=[],soma = 0,multi=1;
+
+
+    while(x<10){
+        vetNum[x] = parseInt(prompt("Digite um numero:"));
+        x++;
+    }
+
+    for(i=0;i<10;i++){
+        if((vetNum[i]% 2 )== 0){
+        vetPar[i]=vetNum[i];
+        soma = soma +vetPar[i];
+    }
+    else{
+        vetImpar[i]=vetNum[i];
+        multi = multi * vetImpar[i];
+    }
+    }
+
+
+    console.log("A soma dos numeros pares é:" + soma);
+    console.log("A multiplicação dos numeros impares é:" + multi);
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio09</title>
+</head>
+<body>
+<script>
+    function verifica(arr) { // Está criando uma função
+        var resul = arr.map(function(num) {
+            var maior = 0;
+            for(var i=0;i<num.length; i++) {// laço "para" para executar algo
+                if (num[i] > maior) {// Executando o "if" para definir qual é o maior numero
+                maior = num[i];
+            }
+            }
+            return maior;// retorna o maior numero
+        });
+        return resul;//retornando o array
+    }
+    verifica([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+    //a saida final vai ser o maior numero
+</script>
+</body>
+</html>

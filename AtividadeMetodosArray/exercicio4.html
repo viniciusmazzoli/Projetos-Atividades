@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 4</title>
+</head>
+<body>
+<script>
+
+    let nome = prompt("Qual é o seu nome?")
+    var anosExperiencia = prompt(nome +",digite quantos anos você tem de estudo");
+
+    function experiencia(anosExperiencia)
+    {
+    if(anosExperiencia <=1){
+        console.log("O Aluno "+ nome + " é Junior")
+    }else if(anosExperiencia <= 3){
+        console.log("O aluno " + nome + " é Pleno")
+    }else if(anosExperiencia <= 6){
+        console.log("O aluno " + nome + " é Senior")
+    }else{
+        console.log("O aluno " + nome + " é Mestre jedi")
+    }
+
+    }
+
+    console.log(experiencia(anosExperiencia))
+
+
+</script>
+</body>
+</html>

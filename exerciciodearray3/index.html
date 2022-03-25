@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    <title>exercicico 1</title>
+</head>
+
+<body>
+    <script>
+        var vetNum = [];
+        var vetpositivo = [];
+        var x = 0;
+        var retorno = 0;
+
+        while (x < 10) {
+            vetNum[x] = parseInt(prompt("Digite o numero"));
+            x++;
+            /*num=parseInt(prompt("Digite o numero"));
+       
+                   vetNum.push(num); Outra forma de entrada de dados para o vetor*/
+
+        }
+        function Posito(vetNum) {
+            for (i = 0; i < 10; i++) {
+                if (vetNum[i] > 0) {
+                    vetpositivo.push(vetNum[i]);
+                }
+            }
+            return (vetpositivo);
+
+        }
+        retorno = Posito(vetNum);
+
+
+        window.alert(retorno);
+
+        //atividade 2
+
+        var i = vetpositivo.length - 1, cont = 0,maxVal=0;
+
+        function getMax(arr){
+            while(cont < i){
+                if(arr[cont]>maxVal){
+                    maxVal=arr[cont]
+                }
+                cont++; 
+            }
+            return maxVal;
+
+        }
+        window.alert("O valor maximo é "+ getMax(vetpositivo))
+
+    </script>
+    
+   
+</body>
+
+</html>

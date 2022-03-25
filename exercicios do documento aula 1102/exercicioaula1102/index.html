@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade aula 11/02</title>
+</head>
+<body>
+<script>
+    var peso = prompt("Massa (kg) : ");
+    var altura = prompt("Altura (m) :");
+    var imc = peso/(altura ^ 2);
+    mensagem="não foi possivel realizar o calculo";
+
+    if((imc < 18.5))
+        alert("Abaixo do peso")
+
+    else if ((imc >= 18.5) && (imc < 25))
+        alert("Peso normal")
+
+    else if((imc >= 25) && (imc < 30))
+        alert("Acima do peso ")
+
+    else if((imc > 30))
+    alert("Obeso")
+
+    else mensagem;
+
+</script>
+</body>
+</html>

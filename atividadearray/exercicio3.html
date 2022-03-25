@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var vetNumero = [], x = 0, vetPositivo = [], retorno = 0;
+
+    while (x < 10) {
+        vetNum[x] = parseInt(prompt('Digite os números'));
+        x++;
+    }
+
+    function Positivo(vetNumero) {
+
+        for (i = 0; i < 10; i++) {
+            if (vetNumero[i] > 0) {
+                vetPositivo.push(vetNumero[i]);
+            }
+        }
+        return (vetPositivo);
+    }
+
+    retorno = Positivo(vetNumero);
+
+    for (i = 0; i < 10; i++) {
+        console.log(vetPositivo[i]);
+    }
+
+    var vetImpar = [];
+
+    function impar(vetNumero) {
+
+        for (i = 0; i < 10; i++) {
+            if (vetNumero[i] % 2 != 0) {
+                vetImpar.push(vetNum[i]);
+            }
+        }
+        return vetImpar;
+    }
+    console.log("Números ímpares: " + impar(vetNumero));
+</script>
+</body>
+</html>

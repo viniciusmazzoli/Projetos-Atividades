@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcular media da nota</title>
+</head>
+<body>
+<script>
+    let nota1 = prompt("Digite sua primeira nota:");
+    let nota2 = prompt("Digite sua segunda nota:");
+    let nota3 = prompt("Digite sua terceira nota:");
+    media = (nota1 + nota2 + nota3)/3;
+    mensagem ="";
+
+    if ((media < 40))
+        mensagem="O ALUNO ESTÁ REPROVADO!";
+    else if((media >= 40) && (media < 60))
+        mensagem="O ALUNO ESTÁ EM RECUPERAÇÃO!";
+    else if((media > 60))
+        mensagem="O ALUNO ESTÁ APROVADO!";
+
+    alert(mensagem)
+
+</script>
+</body>
+</html>

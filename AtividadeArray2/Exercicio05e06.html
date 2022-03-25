@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio05</title>
+</head>
+<body>
+<script>
+
+    const produtos = [
+        { id: 1, categoria: 'limpeza', name: 'Amaciante' },
+        { id: 2, categoria: 'limpeza', name: 'Detergente' },
+        { id: 3, categoria: 'alimento', name: 'ovo' },
+        { id: 4, categoria: 'alimento', name: 'alface' },
+    ];
+
+    const Arrayid = produtos.map(ids => ids.id);
+    const arrayAlimentos = produto => produto.categoria === 'alimento';
+    const alimento = produtos.filter(arrayAlimentos);
+    const arrayidAlimentos = produtos.filter(idsalimento => idsalimento.categoria === 'alimento').map(idsalimento => idsalimento.id);
+
+    console.log(Arrayid);
+    console.log(alimento);
+    console.log(arrayidAlimentos);
+
+</script>
+</body>
+</html>

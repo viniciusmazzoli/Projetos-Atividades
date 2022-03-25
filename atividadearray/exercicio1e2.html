@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 01</title>
+</head>
+<body>
+<script>
+    var vetNum = [], x = 0, vetPositivo = [], retorno = 0;
+
+    while (x < 10) {
+        vetNum[x] = parseInt(prompt('Digite os números'));
+        x++;
+    }
+    function Positivo(vetNum) {
+
+        for (i = 0; i < 10; i++) {
+            if (vetNum[i] > 0) {
+                vetPositivo.push(vetNum[i]);
+            }
+        }
+        return (vetPositivo);
+    }
+    retorno = Positivo(vetNum);
+
+    for (i = 0; i < 10; i++) {
+        console.log(vetPositivo[i]);
+    }
+    var i = vetPositivo.length - 1, cont = 0, maxValor = 0;
+    function maximo(array) {
+        while (cont < i) {
+            if (array[cont] > maxValor) {
+                maxValor = array[cont];
+            }
+            cont++;
+        }
+        return maxValor;
+    }
+    console.log("O maior número é: " + maximo(vetPositivo));
+</script>
+</body>
+</html>
